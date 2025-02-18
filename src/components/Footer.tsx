@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900">
             <hr className="border-gray-200" />
-            <div className="px-4 md:px-16 pt-12 pb-10 space-y-5">
+            <div className="max-w-screen-2xl mx-auto px-4 pt-12 pb-10 space-y-5">
                 {/* Top section: Logo, social icons, and nav links */}
                 <div 
                     className="flex flex-col md:flex-row justify-between"

@@ -52,8 +52,8 @@ export default function Navbar() {
             `}
         >
             <div 
-                className="flex flex-wrap items-end 
-                    justify-between mx-auto p-5 md:px-16"
+                className="max-w-screen-2xl mx-auto flex flex-wrap items-end 
+                    justify-between mx-auto p-5"
             >
                 <Link 
                     href="/"
