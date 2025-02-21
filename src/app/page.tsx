@@ -1,101 +1,115 @@
 import Image from "next/image";
+import Link from "next/link";
+import coverImg from "../../public/images/building1.jpg";
+import LAImg from "../../public/images/los-angeles.jpg";
+import businessCard from "../../public/images/business-card.jpg";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main>
+        <section className="relative h-screen">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+                src={coverImg}
+                alt="Home Background Image"
+                layout="fill"
+                objectFit="cover"
+                // Place the image behind other content and allow clicks to pass through.
+                className="absolute inset-0 pointer-events-none"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            <div className="absolute inset-0 bg-black opacity-40 pointer-events-none"></div>
+            <div 
+                className="relative z-10 flex h-full flex-col items-center 
+                    justify-center text-white px-4"
+            >
+                <h1 className="text-4xl font-bold text-center">
+                    DECKS. STAIRS. BALCONIES. PATIOS.
+                </h1>
+                <p className="mt-4 text-xl text-center">
+                Alpha MM Inc is a leading decking contracting company based in Los Angeles, California, specializing in protecting decks, balconies, patios, stairways, and walkways from water.
+                </p>
+                <Link
+                    href="/#about"
+                    className="mt-6 rounded bg-transparent border px-6 py-2 text-lg 
+                        font-medium hover:bg-green-800 transition duration-200"
+                >
+                    VIEW OUR WORK ➜
+                </Link>
+            </div>
+        </section>
+
+        <section className="py-5 bg-white">
+            <div className="container text-center">
+            <div className="row g-4">
+                <div className="col-md-4">
+                <div className="card shadow border-0">
+                    <div className="card-body">
+                    <h1 className="display-4 mb-3">🏗️</h1>
+                    <h2 className="h4 fw-bold">New Construction</h2>
+                    <p className="mt-3">We waterproof new construction! We can provide a finished surface using one of our surface coatings and paint finishes, or leave the surface unfinished for later/other surface finishes, such as tile.</p>
+                    </div>
+                </div>
+                </div>
+                <div className="col-md-4">
+                <div className="card shadow border-0">
+                    <div className="card-body">
+                    <h1 className="display-4 mb-3">🛠️</h1>
+                    <h2 className="h4 fw-bold">Existing Construction</h2>
+                    <p className="mt-3">We repair existing construction! We diagnose, repair, replace, and reseal failing or leaking surfaces. We can finish the surface using one of our surface coatings and paint finishes, or leave the surface unfinished for later/other surface finishes, such as tile.</p>
+                    </div>
+                </div>
+                </div>
+                <div className="col-md-4">
+                <div className="card shadow border-0">
+                    <div className="card-body">
+                    <h1 className="display-4 mb-3">📞</h1>
+                    <h2 className="h4 fw-bold">Free Estimates</h2>
+                    <p className="mt-3">We provide free estimates for your projects! Choose Alpha MM Inc for your waterproofing needs! Contact us today!</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section className="relative h-screen">
+            <Image
+                src={LAImg}
+                alt="LA Background Image"
+                layout="fill"
+                objectFit="cover"
+                // Place the image behind other content and allow clicks to pass through.
+                className="absolute inset-0 pointer-events-none"
+            />
+            <div className="absolute inset-0 bg-black opacity-40 pointer-events-none"></div>
+            <div 
+                className="relative z-10 flex h-full flex-col items-center 
+                    justify-center text-white px-4"
+            >
+                <h1 className="text-4xl font-bold text-center">
+                    Serving Excellence For Over 20 Years.
+                </h1>
+                <Link
+                    href="/#about"
+                    className="mt-6 rounded bg-transparent border px-6 py-2 text-lg 
+                        font-medium hover:bg-green-800 transition duration-200"
+                >
+                    READ ABOUT US ➜
+                </Link>
+            </div>
+        </section>
+
+        <section className="py-5 bg-light">
+            <div className="container d-flex flex-column flex-lg-row align-items-center text-center text-lg-start">
+            <div className="flex-shrink-0 mb-4 mb-lg-0">
+                <Image src={businessCard} className="img-fluid shadow-lg" alt="Business Card"/>
+            </div>
+            <div className="ms-lg-5">
+                <h2 className="h3 fw-bold">The Business Card That Started It All.</h2>
+                <p className="mt-3">Have a new project that needs waterproofing? Have a leaky or damaged walking surface? We've got you covered. We provide the highest quality service with competitive pricing.</p>
+                <a href="/contact/" className="btn btn-primary mt-4">CONTACT US TODAY ➜</a>
+            </div>
+            </div>
+        </section>
+        </main>
   );
 }
