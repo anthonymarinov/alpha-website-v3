@@ -25,7 +25,7 @@ export default function Footer() {
                         </h1>
                     </Link>
 
-                    <div className="flex flex-row justify-start md:justify-end space-x-5 pt-6">
+                    <div className="flex flex-row justify-start md:justify-end space-x-1 pt-6">
                         <Link 
                             href="/"
                             className="text-gray-300">
