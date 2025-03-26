@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Alpha MM Inc",
-  description: "Alpha MM Inc Company Website",
+  description: "Alpha MM Inc is a leading decking contracting company based in Los Angeles, California, specializing in protecting decks, balconies, patios, stairways, and walkways from water.",
+  icons: "/favicon.svg",
 };
 
 export default function RootLayout({

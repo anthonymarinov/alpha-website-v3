@@ -52,7 +52,7 @@ export default function Navbar() {
             `}
         >
             <div 
-                className="max-w-screen-2xl mx-auto flex flex-wrap items-end 
+                className="max-w-screen-xl mx-auto flex flex-wrap items-end 
                     justify-between mx-auto p-5"
             >
                 <Link 
@@ -60,7 +60,7 @@ export default function Navbar() {
                     className="flex items-end space-x-3 rtl:space-x-reverse
                         space-y-1"
                 >
-                    <Image src={alphaLogo} width={40} height={40} alt="Alpha Logo" />
+                    <Image src={alphaLogo} width={40} height={40} alt="Alpha Navbar Logo" />
                     <h1 className="font-thin text-2xl">
                         Alpha MM Inc
                     </h1>
@@ -101,7 +101,7 @@ export default function Navbar() {
                     <ul 
                         className="font-thin text-md flex flex-col p-4 md:p-0 mt-4 
                             bg-blue-950 md:bg-transparent border border-gray-100 
-                            rounded-sm md:flex-row md:space-x-10 rtl:space-x-reverse 
+                            rounded-sm md:flex-row md:space-x-7 rtl:space-x-reverse 
                             md:mt-0 md:border-0"
                     >
                         <li>
@@ -143,7 +143,7 @@ export default function Navbar() {
                         <li>
                             <Link 
                                 onClick={() => setIsOpen(false)}
-                                href="/#services"
+                                href="/#projects"
                                 className="block py-2 px-3 text-white rounded-sm 
                                 hover:bg-gray-100 hover:text-blue-950 
                                 md:hover:bg-transparent md:border-0 md:hover:underline 

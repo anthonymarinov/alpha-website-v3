@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.11.2",
+    "@playwright/test": "^1.51.1",
     "next": "15.1.7",
+    "playwright": "^1.51.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
