@@ -8,22 +8,27 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900">
             <hr className="border-gray-200" />
-            <div className="max-w-screen-2xl mx-auto px-4 pt-12 pb-10 space-y-5">
+            <div className="max-w-screen-xl mx-auto px-4 pt-12 pb-10 space-y-5">
                 {/* Top section: Logo, social icons, and nav links */}
                 <div 
-                    className="flex flex-col md:flex-row justify-between"
+                    className="flex flex-col md:flex-row md:justify-between"
                 >
-                    {/* Logo and Social Icons */}
-                    <Link 
-                        href="/"
-                        className="flex flex-row items-center
-                            space-y-1 space-x-5"
-                    >
-                        <Image src={alphaLogo} width={40} height={40} alt="Alpha Logo" />
-                        <h1 className="font-thin text-2xl">
-                            Alpha MM Inc
-                        </h1>
-                    </Link>
+                    <div className="text-left">
+                        {/* Logo and Social Icons */}
+                        <Link 
+                            href="/"
+                            className="flex flex-row items-center justify-start
+                                space-y-1 space-x-3"
+                        >
+                            <Image src={alphaLogo} width={40} height={40} alt="Alpha Logo" />
+                            <h1 className="font-thin text-2xl">
+                                Alpha MM Inc
+                            </h1>
+                        </Link>
+
+                        <p className="pt-3">DECKS. STAIRS. BALCONIES. PATIOS</p>
+                        <p className="pt-1">Since 2002.</p>
+                    </div>
 
                     <div className="flex flex-row justify-start md:justify-end space-x-1 pt-6">
                         <Link 
@@ -52,7 +57,7 @@ export default function Footer() {
                     {/* Navigation Links */}
                     <div 
                         className="flex flex-col md:flex-row text-gray-300 
-                            font-thin space-y-3 md:space-x-10 md:space-y-0"
+                            font-thin space-y-3 md:space-x-7 md:space-y-0"
                     >
                         <Link 
                             href="/#services"
@@ -79,16 +84,16 @@ export default function Footer() {
                             Contact
                         </Link>
                         <Link 
-                            href="/"
+                            href="/privacypolicy"
                             className="hover:underline"
                             >
                                 Privacy Policy
                             </Link>
                             <Link 
-                                href="/"
+                                href="/termsconditions"
                                 className="hover:underline"
                             >
-                                Terms &amp; Conditions
+                                Terms & Conditions
                             </Link>
                     </div>
 
