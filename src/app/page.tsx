@@ -6,6 +6,10 @@ import businessCard from "../../public/images/business-card.jpg";
 import newConstruction from "../../public/images/new-construction.svg";
 import existingConstruction from "../../public/images/existing-construction.svg";
 import freeEstimates from "../../public/images/free-estimates.svg";
+import waterproofing from "../../public/images/waterproofing.svg";
+import reseal from "../../public/images/reseal.svg";
+import stairs from "../../public/images/stairs.svg";
+import railing from "../../public/images/railing.svg";
 
 export default function Home() {
   return (
@@ -138,6 +142,64 @@ export default function Home() {
                 </Link>
             </div>
         </section>
+
+        <section className="py-10 bg-white">
+            <div className="max-w-screen-xl container items-center justify-center mx-auto px-5 pb-5">
+                <h2 className="text-sky-600 text-xl mb-5">WHAT WE DO</h2>
+                <h3 className="text-black text-3xl font-bold mb-5">No more leaking ever. High quality work that will last.</h3>
+                <p className="text-gray-600">
+                    When you need high-quality work at competitive prices, we have it covered. Alpha MM Inc. specializes in safeguarding decks, balconies, patios, stairways, and walkways from the elements, ensuring lasting durability and aesthetic appeal.
+                    We use a high-quality fiberglass waterproofing system with non-skid and non-slip finishes. No more leaking, 10 years guaranteed.
+                </p>
+            </div>
+            <div className="max-w-4xl mx-auto px-5 m-10">
+                <div className="text-center">
+                    <h2 className="font-semibold text-3xl text-gray-900">Quality Services</h2>
+                    <p className="max-w-md mx-auto mt-2 text-gray-500">See how our high quality services can help your project progress smoothly and last.</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-10 mt-10">
+                    <div className="flex gap-4 items-start">
+                        <Image src={waterproofing} width="40" alt="Waterproofing" />
+                        <div>
+                            <h3 className="text-black font-semibold text-xl">Waterproofing</h3>
+                            <p className="mt-1 text-gray-500">We waterproof new and existing construction with our fiberglass waterproofing system. Choose one of our finishes, or use your own alternative finish.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div className="flex gap-4 items-start">
+                        <Image src={reseal} width="40" alt="Reseal" />
+                        <div>
+                            <h3 className="text-black font-semibold text-xl">Repair & Reseal</h3>
+                            <p className="mt-1 text-gray-500">We repair leaking surfaces, replace rotten wood and rusted railing posts, and reseal with our fiberglass waterproofing system.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="flex gap-4 items-start">
+                        <Image src={stairs} width="40" alt="Stairs" />
+                        <div>
+                            <h3 className="text-black font-semibold text-xl">Stairs & Pre-Cast Steps</h3>
+                            <p className="mt-1 text-gray-500">We repair existing stairways and replace damaged pre-cast steps, and reseal to protect against leaks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="flex gap-4 items-start">
+                        <Image src={railing} width="40" alt="Railings" />
+                        <div>
+                            <h3 className="text-black font-semibold text-xl">Metal Railing Repair</h3>
+                            <p className="mt-1 text-gray-500">We fix damaged and rusted metal railing posts that leak, replace the rotten wood underneath them, and seal them against moisture.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
   );
 }
