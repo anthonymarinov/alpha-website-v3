@@ -10,6 +10,14 @@ import waterproofing from "../../public/images/waterproofing.svg";
 import reseal from "../../public/images/reseal.svg";
 import stairs from "../../public/images/stairs.svg";
 import railing from "../../public/images/railing.svg";
+import walkway2 from "../../public/images/walkway2.jpg";
+import deck3 from "../../public/images/deck3.jpg";
+import stairway from "../../public/images/stairway.jpg";
+import deck from "../../public/images/deck.jpg";
+import walkway from "../../public/images/walkway.jpg";
+import landing from "../../public/images/landing.jpg";
+import deck2 from "../../public/images/deck2.jpg";
+import balcony from "../../public/images/balcony.jpg";
 
 export default function Home() {
   return (
@@ -200,6 +208,28 @@ export default function Home() {
             </div>
         </section>
 
+        <section className="pb-10 bg-white">
+            <div className="max-w-screen-xl container items-center justify-center mx-auto px-5 pb-5">
+                <h2 className="text-sky-600 text-xl mb-5">OUR WORK</h2>
+                <h3 className="text-black text-3xl font-bold mb-5">Over 20 years worth of projects.</h3>
+                <p className="text-gray-600">
+                    Our extensive portfolio covers both commercial and residential construction. With thousands of completed projects, we have the experience you need.
+                    Here are some examples of our past work:
+                </p>
+            </div>
+
+            <div className="max-w-screen-xl container grid grid-cols-3 gap-5 
+                            justify-center items-center mx-auto px-5 pt-5">
+                <Image src={walkway2} alt="Walkway 2" className="shadow" />
+                <Image src={deck3} alt="Deck 3" className="shadow" />
+                <Image src={stairway} alt="Stairway" className="shadow" />
+                <Image src={deck} alt="Deck" className="shadow" />
+                <Image src={walkway} alt="Walkway" className="shadow" />
+                <Image src={landing} alt="Landing" className="shadow" />
+                <Image src={deck2} alt="Deck" className="shadow" />
+                <Image src={balcony} alt="Balcony" className="shadow" />
+            </div>
+        </section>
     </main>
   );
 }
