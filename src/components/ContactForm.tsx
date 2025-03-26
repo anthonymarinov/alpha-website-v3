@@ -44,7 +44,7 @@ export default function ContactForm() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "4ed83339-9a1a-4eb0-850f-a106511cd969",
+          access_key: "542dd482-789d-4e01-89e3-b2a7c43eebf8",
           name: form.name.value,
           email: form.email.value,
           message: form.message.value,
@@ -83,7 +83,7 @@ export default function ContactForm() {
               name="name"
               placeholder="John Doe"
               required
-              className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-green-600 focus:ring-green-500 focus:ring-opacity-40 focus:outline-none focus:ring"
+              className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-none focus:ring"
             />
           </div>
 
@@ -96,7 +96,7 @@ export default function ContactForm() {
               name="email"
               placeholder="johndoe@example.com"
               required
-              className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-green-600 focus:ring-green-500 focus:ring-opacity-40 focus:outline-none focus:ring"
+              className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-none focus:ring"
             />
           </div>
 
@@ -107,7 +107,7 @@ export default function ContactForm() {
             <textarea
               name="message"
               required
-              className="block w-full h-32 max-h-40 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-green-600 focus:ring-green-500 focus:ring-opacity-40 focus:outline-none focus:ring"
+              className="block w-full h-32 max-h-40 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-none focus:ring"
               placeholder="Tell us about your project..."
             ></textarea>
           </div>
