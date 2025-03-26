@@ -14,7 +14,7 @@ export default function ContactForm() {
   };
 
   useEffect(() => {
-    if (typeof window !== "undefined" && (window as any).__SKIP_CAPTCHA__ === true) {
+    if (typeof window !== "undefined" && window.__SKIP_CAPTCHA__ === true) {
       setCaptchaToken("dummy-test-token");
     }
   }, []);

@@ -102,7 +102,7 @@ export default function Home() {
                 </p>
                 <br/>
                 <p className="text-gray-600">
-                    At Alpha MM Inc, customer satisfaction is our top priority. Our dedication to quality, reliability, and competitive pricing has earned us a reputation as one of the top contractors for waterproofing needs in Southern California. Whether you're looking to protect a new project or repair a leaky surface, we are here to help you every step of the way.
+                    At Alpha MM Inc, customer satisfaction is our top priority. Our dedication to quality, reliability, and competitive pricing has earned us a reputation as one of the top contractors for waterproofing needs in Southern California. Whether you&apos;re looking to protect a new project or repair a leaky surface, we are here to help you every step of the way.
                 </p>
                 <br/>
                 <p className="text-gray-600">
