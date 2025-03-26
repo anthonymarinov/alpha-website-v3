@@ -20,7 +20,7 @@ export default function Footer() {
                             className="flex flex-row items-center justify-start
                                 space-y-1 space-x-3"
                         >
-                            <Image src={alphaLogo} width={40} height={40} alt="Alpha Logo" />
+                            <Image src={alphaLogo} width={40} height={40} alt="Alpha Footer Logo" />
                             <h1 className="font-thin text-2xl">
                                 Alpha MM Inc
                             </h1>

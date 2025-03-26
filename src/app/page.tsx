@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import ContactForm from "../components/ContactForm";
 import coverImg from "../../public/images/building1.jpg";
 import LAImg from "../../public/images/los-angeles.jpg";
@@ -23,7 +24,11 @@ import balcony from "../../public/images/balcony.jpg";
 export default function Home() {
   return (
     <main>
-        <section id="home" className="relative h-screen">
+        <Head>
+            <title>Alpha MM Inc</title>
+        </Head>
+
+        <section className="relative h-screen">
             <Image
                 src={coverImg}
                 alt="Home Background Image"
@@ -41,7 +46,7 @@ export default function Home() {
                     DECKS. STAIRS. BALCONIES. PATIOS.
                 </h1>
                 <p className="mt-4 text-lg text-center max-w-2xl">
-                Alpha MM Inc is a leading decking contracting company based in Los Angeles, California, specializing in protecting decks, balconies, patios, stairways, and walkways from water.
+                    Alpha MM Inc is a leading decking contracting company based in Los Angeles, California, specializing in protecting decks, balconies, patios, stairways, and walkways from water.
                 </p>
                 <Link
                     href="/#about"
@@ -67,7 +72,7 @@ export default function Home() {
                 </div>
 
                 <div className="max-w-sm p-6 bg-sky-950 border border-gray-200 rounded-lg shadow-sm">
-                    <Image src={existingConstruction} alt="New Construction" width="40" className="mb-2"></Image>
+                    <Image src={existingConstruction} alt="Existing Construction" width="40" className="mb-2"></Image>
                     <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">Existing Construction</h5>
                     <p className="mb-3 font-normal text-gray-200">
                         We repair existing construction! We diagnose, repair, replace, and reseal failing or leaking surfaces. We can finish the surface using one of our surface coatings and paint finishes, or leave the surface unfinished for later/other surface finishes, such as tile.
@@ -75,7 +80,7 @@ export default function Home() {
                 </div>
 
                 <div className="max-w-sm p-6 bg-sky-950 border border-gray-200 rounded-lg shadow-sm">
-                    <Image src={freeEstimates} alt="New Construction" width="40" className="mb-2"></Image>
+                    <Image src={freeEstimates} alt="Free Estimates" width="40" className="mb-2"></Image>
                     <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">Free Estimates</h5>
                     <p className="mb-3 font-normal text-gray-200">
                         We provide free estimates for your projects! Choose Alpha MM Inc for your waterproofing needs! Contact us today!
@@ -227,7 +232,7 @@ export default function Home() {
                 <Image src={deck} alt="Deck" className="shadow" />
                 <Image src={walkway} alt="Walkway" className="shadow" />
                 <Image src={landing} alt="Landing" className="shadow" />
-                <Image src={deck2} alt="Deck" className="shadow" />
+                <Image src={deck2} alt="Deck 2" className="shadow" />
                 <Image src={balcony} alt="Balcony" className="shadow" />
             </div>
         </section>

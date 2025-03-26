@@ -60,7 +60,7 @@ export default function Navbar() {
                     className="flex items-end space-x-3 rtl:space-x-reverse
                         space-y-1"
                 >
-                    <Image src={alphaLogo} width={40} height={40} alt="Alpha Logo" />
+                    <Image src={alphaLogo} width={40} height={40} alt="Alpha Navbar Logo" />
                     <h1 className="font-thin text-2xl">
                         Alpha MM Inc
                     </h1>
