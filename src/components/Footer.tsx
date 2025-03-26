@@ -8,26 +8,31 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900">
             <hr className="border-gray-200" />
-            <div className="max-w-screen-2xl mx-auto px-4 pt-12 pb-10 space-y-5">
+            <div className="max-w-screen-xl mx-auto px-4 pt-12 pb-10 space-y-5">
                 {/* Top section: Logo, social icons, and nav links */}
                 <div 
-                    className="flex flex-col md:flex-row justify-between"
+                    className="flex flex-col md:flex-row md:justify-between"
                 >
-                    {/* Logo and Social Icons */}
-                    <Link 
-                        href="/"
-                        className="flex flex-row items-center
-                            space-y-1 space-x-5"
-                    >
-                        <Image src={alphaLogo} width={40} height={40} alt="Alpha Logo" />
-                        <h1 className="font-thin text-2xl">
-                            Alpha MM Inc
-                        </h1>
-                    </Link>
+                    <div className="text-left">
+                        {/* Logo and Social Icons */}
+                        <Link 
+                            href="/"
+                            className="flex flex-row items-center justify-start
+                                space-y-1 space-x-3"
+                        >
+                            <Image src={alphaLogo} width={40} height={40} alt="Alpha Footer Logo" />
+                            <h1 className="font-thin text-2xl">
+                                Alpha MM Inc
+                            </h1>
+                        </Link>
+
+                        <p className="pt-3">DECKS. STAIRS. BALCONIES. PATIOS</p>
+                        <p className="pt-1">Since 2002.</p>
+                    </div>
 
                     <div className="flex flex-row justify-start md:justify-end space-x-1 pt-6">
                         <Link 
-                            href="/"
+                            href="https://www.facebook.com/alphamminc/"
                             className="text-gray-300">
                             <button className="hover:bg-blue-500 transition duration-500 p-2 font-semibold text-gray-300 hover:text-white inline-flex items-center space-x-2 rounded">
                             <svg className="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
@@ -52,7 +57,7 @@ export default function Footer() {
                     {/* Navigation Links */}
                     <div 
                         className="flex flex-col md:flex-row text-gray-300 
-                            font-thin space-y-3 md:space-x-10 md:space-y-0"
+                            font-thin space-y-3 md:space-x-7 md:space-y-0"
                     >
                         <Link 
                             href="/#services"
@@ -79,16 +84,16 @@ export default function Footer() {
                             Contact
                         </Link>
                         <Link 
-                            href="/"
+                            href="/privacypolicy"
                             className="hover:underline"
                             >
                                 Privacy Policy
                             </Link>
                             <Link 
-                                href="/"
+                                href="/termsconditions"
                                 className="hover:underline"
                             >
-                                Terms &amp; Conditions
+                                Terms & Conditions
                             </Link>
                     </div>
 
