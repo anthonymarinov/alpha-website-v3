@@ -40,7 +40,7 @@ export default function Footer() {
                             <span className="sr-only">Facebook page</span>
                         </Link>
                         <Link 
-                            href="/"
+                            href="https://www.linkedin.com/company/alpha-mm-inc/about/"
                             className="text-gray-300 hover:text-blue-500"
                         >
                             <button className="hover:bg-blue-600 transition duration-500 p-2 font-semibold text-gray-300 hover:text-white inline-flex items-center space-x-2 rounded">

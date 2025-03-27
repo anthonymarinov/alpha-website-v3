@@ -200,16 +200,26 @@ test('Project images load successfully', async ({ page }) => {
 test('Contact section social links load successfully', async ({ page }) => {
     const facebookURLSelector = 'a[href*="https://www.facebook.com/alphamminc/"]';
     const facebookURL = 'https://www.facebook.com/alphamminc/';
+    const linkedinURLSelector = 'a[href*="https://www.linkedin.com/company/alpha-mm-inc/about/"]';
+    const linkedinURL = 'https://www.linkedin.com/company/alpha-mm-inc/about/';
 
     await page.goto('/#contact');
-    const linkElement = page.locator(facebookURLSelector).nth(0);
-    const linkElement2 = page.locator(facebookURLSelector).nth(1);
+    const facebookElement = page.locator(facebookURLSelector).nth(0);
+    const facebookElement2 = page.locator(facebookURLSelector).nth(1);
+    await expect(facebookElement).toBeVisible();
+    const facebookhref = await facebookElement.getAttribute('href');
+    await expect(facebookhref).toContain(facebookURL);
+    await expect(facebookElement2).toBeVisible();
+    const facebookhref2 = await facebookElement2.getAttribute('href');
+    await expect(facebookhref2).toContain(facebookURL);
 
-    await expect(linkElement).toBeVisible();
-    const href = await linkElement.getAttribute('href');
-    await expect(href).toContain(facebookURL);
-
-    await expect(linkElement2).toBeVisible();
-    const href2 = await linkElement2.getAttribute('href');
-    await expect(href2).toContain(facebookURL);
+    await page.goto('/#contact');
+    const linkedinElement = page.locator(linkedinURLSelector).nth(0);
+    const linkedinElement2 = page.locator(linkedinURLSelector).nth(1);
+    await expect(linkedinElement).toBeVisible();
+    const linkedinhref = await linkedinElement.getAttribute('href');
+    await expect(linkedinhref).toContain(linkedinURL);
+    await expect(linkedinElement2).toBeVisible();
+    const linkedinhref2 = await linkedinElement2.getAttribute('href');
+    await expect(linkedinhref2).toContain(linkedinURL);
 });
