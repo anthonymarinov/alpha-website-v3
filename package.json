@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hcaptcha/react-hcaptcha": "^1.11.2",
+    "@hcaptcha/react-hcaptcha": "^1.12.0",
     "@playwright/test": "^1.51.1",
     "@vercel/analytics": "^1.5.0",
     "next": "15.1.7",
