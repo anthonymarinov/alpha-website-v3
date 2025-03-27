@@ -52,7 +52,7 @@ export default function Navbar() {
             `}
         >
             <div 
-                className="max-w-screen-xl mx-auto flex flex-wrap items-end 
+                className="max-w-(--breakpoint-xl) mx-auto flex flex-wrap items-end 
                     justify-between mx-auto p-5"
             >
                 <Link 
@@ -71,7 +71,7 @@ export default function Navbar() {
                     type="button"
                     className="inline-flex items-center p-2 w-10 h-10 
                         justify-center text-sm text-white rounded-lg md:hidden 
-                        hover:bg-blue-950 focus:outline-none focus:ring-2 
+                        hover:bg-blue-950 focus:outline-hidden focus:ring-2 
                         focus:ring-gray-200"
                     aria-controls="navbar-default"
                     aria-expanded={isOpen}

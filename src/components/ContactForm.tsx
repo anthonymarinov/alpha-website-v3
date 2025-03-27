@@ -83,7 +83,7 @@ export default function ContactForm() {
               name="name"
               placeholder="John Doe"
               required
-              className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-none focus:ring"
+              className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-hidden focus:ring-3"
             />
           </div>
 
@@ -96,7 +96,7 @@ export default function ContactForm() {
               name="email"
               placeholder="johndoe@example.com"
               required
-              className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-none focus:ring"
+              className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-hidden focus:ring-3"
             />
           </div>
 
@@ -107,7 +107,7 @@ export default function ContactForm() {
             <textarea
               name="message"
               required
-              className="block w-full h-32 max-h-40 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-none focus:ring"
+              className="block w-full h-32 max-h-40 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-sky-600 focus:ring-sky-500 focus:ring-opacity-40 focus:outline-hidden focus:ring-3"
               placeholder="Tell us about your project..."
             ></textarea>
           </div>
@@ -121,7 +121,7 @@ export default function ContactForm() {
 
           <button
             type="submit"
-            className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-sky-600 rounded-md hover:bg-sky-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50"
+            className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white transition-colors duration-300 transform bg-sky-600 rounded-md hover:bg-sky-500 focus:outline-hidden focus:ring-3 focus:ring-blue-400 focus:ring-opacity-50"
           >
             Get In Touch
           </button>

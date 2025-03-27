@@ -59,11 +59,11 @@ export default function Home() {
         </section>
 
         <section className="pt-10 bg-white">
-            <div className="max-w-screen-xl container grid md:grid-cols-3
+            <div className="max-w-(--breakpoint-xl) container grid md:grid-cols-3
                             justify-center items-center gap-5 items-stretch mx-auto 
                             p-5"
             >
-                <div className="max-w-sm p-6 bg-sky-950 border border-gray-200 rounded-lg shadow-sm">
+                <div className="max-w-sm p-6 bg-sky-950 border border-gray-200 rounded-lg shadow-xs">
                     <Image src={newConstruction} alt="New Construction" width="40" className="mb-2"></Image>
                     <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">New Construction</h5>
                     <p className="mb-3 font-normal text-gray-200">
@@ -71,7 +71,7 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="max-w-sm p-6 bg-sky-950 border border-gray-200 rounded-lg shadow-sm">
+                <div className="max-w-sm p-6 bg-sky-950 border border-gray-200 rounded-lg shadow-xs">
                     <Image src={existingConstruction} alt="Existing Construction" width="40" className="mb-2"></Image>
                     <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">Existing Construction</h5>
                     <p className="mb-3 font-normal text-gray-200">
@@ -79,7 +79,7 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="max-w-sm p-6 bg-sky-950 border border-gray-200 rounded-lg shadow-sm">
+                <div className="max-w-sm p-6 bg-sky-950 border border-gray-200 rounded-lg shadow-xs">
                     <Image src={freeEstimates} alt="Free Estimates" width="40" className="mb-2"></Image>
                     <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">Free Estimates</h5>
                     <p className="mb-3 font-normal text-gray-200">
@@ -90,7 +90,7 @@ export default function Home() {
         </section>
 
         <section id="about" className="py-10 bg-white">
-            <div className="max-w-screen-xl container items-center justify-center mx-auto px-5">
+            <div className="max-w-(--breakpoint-xl) container items-center justify-center mx-auto px-5">
                 <h2 className="text-sky-600 text-xl mb-5">WHO WE ARE</h2>
                 <h3 className="text-black text-3xl font-bold mb-5">High quality work at competitive prices.</h3>
                 <p className="text-gray-600">
@@ -158,7 +158,7 @@ export default function Home() {
         </section>
 
         <section id="services" className="py-10 bg-white">
-            <div className="max-w-screen-xl container items-center justify-center mx-auto px-5 pb-5">
+            <div className="max-w-(--breakpoint-xl) container items-center justify-center mx-auto px-5 pb-5">
                 <h2 className="text-sky-600 text-xl mb-5">WHAT WE DO</h2>
                 <h3 className="text-black text-3xl font-bold mb-5">No more leaking ever. High quality work that will last.</h3>
                 <p className="text-gray-600">
@@ -215,7 +215,7 @@ export default function Home() {
         </section>
 
         <section id="projects" className="pb-10 bg-white">
-            <div className="max-w-screen-xl container items-center justify-center mx-auto px-5 pb-5">
+            <div className="max-w-(--breakpoint-xl) container items-center justify-center mx-auto px-5 pb-5">
                 <h2 className="text-sky-600 text-xl mb-5">OUR WORK</h2>
                 <h3 className="text-black text-3xl font-bold mb-5">Over 20 years worth of projects.</h3>
                 <p className="text-gray-600">
@@ -224,21 +224,21 @@ export default function Home() {
                 </p>
             </div>
 
-            <div className="max-w-screen-xl container grid md:grid-cols-3 gap-5 
+            <div className="max-w-(--breakpoint-xl) container grid md:grid-cols-3 gap-5 
                             justify-center items-center mx-auto px-5 pt-5">
-                <Image src={walkway2} alt="Walkway 2" className="shadow" />
-                <Image src={deck3} alt="Deck 3" className="shadow" />
-                <Image src={stairway} alt="Stairway" className="shadow" />
-                <Image src={deck} alt="Deck" className="shadow" />
-                <Image src={walkway} alt="Walkway" className="shadow" />
-                <Image src={landing} alt="Landing" className="shadow" />
-                <Image src={deck2} alt="Deck 2" className="shadow" />
-                <Image src={balcony} alt="Balcony" className="shadow" />
+                <Image src={walkway2} alt="Walkway 2" className="shadow-sm" />
+                <Image src={deck3} alt="Deck 3" className="shadow-sm" />
+                <Image src={stairway} alt="Stairway" className="shadow-sm" />
+                <Image src={deck} alt="Deck" className="shadow-sm" />
+                <Image src={walkway} alt="Walkway" className="shadow-sm" />
+                <Image src={landing} alt="Landing" className="shadow-sm" />
+                <Image src={deck2} alt="Deck 2" className="shadow-sm" />
+                <Image src={balcony} alt="Balcony" className="shadow-sm" />
             </div>
         </section>
 
-        <section id="contact" className="min-h-screen bg-gradient-to-r from-sky-600 via-sky-800 to-sky-900">
-            <div className="relative container flex flex-col min-h-screen px-6 py-12 mx-auto max-w-screen-xl">
+        <section id="contact" className="min-h-screen bg-linear-to-r from-sky-600 via-sky-800 to-sky-900">
+            <div className="relative container flex flex-col min-h-screen px-6 py-12 mx-auto max-w-(--breakpoint-xl)">
                 <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
                     <div className="text-white lg:w-1/2 lg:mx-6">
                         <h1 className="text-2xl font-semibold capitalize lg:text-3xl">Contact Us</h1>
