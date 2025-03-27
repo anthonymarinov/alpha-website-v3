@@ -1,5 +1,4 @@
-
-const { test, expect } = require('@playwright/test');
+import { test, expect } from "@playwright/test";
 
 test('Homepage loads and displays key content', async ({ page }) => {
 
@@ -35,6 +34,9 @@ test('Navbar company logo image loads successfully', async ({ page }) => {
     await testImage.scrollIntoViewIfNeeded();
     await expect(testImage).toBeVisible();
     const bbox = await testImage.boundingBox();
+    if (!bbox) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox.width).toBeGreaterThan(0);
     expect(bbox.height).toBeGreaterThan(0);
 });
@@ -45,6 +47,9 @@ test('Footer company logo image loads successfully', async ({ page }) => {
     await testImage.scrollIntoViewIfNeeded();
     await expect(testImage).toBeVisible();
     const bbox = await testImage.boundingBox();
+    if (!bbox) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox.width).toBeGreaterThan(0);
     expect(bbox.height).toBeGreaterThan(0);
 });
@@ -56,6 +61,9 @@ test('Home hero image loads successfully', async ({ page }) => {
     await testImage.scrollIntoViewIfNeeded();
     await expect(testImage).toBeVisible();
     const bbox = await testImage.boundingBox();
+    if (!bbox) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox.width).toBeGreaterThan(0);
     expect(bbox.height).toBeGreaterThan(0);
 });
@@ -69,18 +77,27 @@ test('Service summary section icons load successfully', async ({ page }) => {
     await testImage.scrollIntoViewIfNeeded();
     await expect(testImage).toBeVisible();
     const bbox = await testImage.boundingBox();
+    if (!bbox) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox.width).toBeGreaterThan(0);
     expect(bbox.height).toBeGreaterThan(0);
 
     await testImage2.scrollIntoViewIfNeeded();
     await expect(testImage2).toBeVisible();
     const bbox2 = await testImage2.boundingBox();
+    if (!bbox2) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox2.width).toBeGreaterThan(0);
     expect(bbox2.height).toBeGreaterThan(0);
 
     await testImage3.scrollIntoViewIfNeeded();
     await expect(testImage3).toBeVisible();
     const bbox3 = await testImage3.boundingBox();
+    if (!bbox3) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox3.width).toBeGreaterThan(0);
     expect(bbox3.height).toBeGreaterThan(0);
 });
@@ -91,6 +108,9 @@ test('Business Card loads successfully', async ({ page }) => {
     await testImage.scrollIntoViewIfNeeded();
     await expect(testImage).toBeVisible();
     const bbox = await testImage.boundingBox();
+    if (!bbox) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox.width).toBeGreaterThan(0);
     expect(bbox.height).toBeGreaterThan(0);
 });
@@ -101,6 +121,9 @@ test('LA hero image loads successfully', async ({ page }) => {
     await testImage.scrollIntoViewIfNeeded();
     await expect(testImage).toBeVisible();
     const bbox = await testImage.boundingBox();
+    if (!bbox) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox.width).toBeGreaterThan(0);
     expect(bbox.height).toBeGreaterThan(0);
 });
@@ -115,24 +138,36 @@ test('Services section icons load successfully', async ({ page }) => {
     await testImage.scrollIntoViewIfNeeded();
     await expect(testImage).toBeVisible();
     const bbox = await testImage.boundingBox();
+    if (!bbox) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox.width).toBeGreaterThan(0);
     expect(bbox.height).toBeGreaterThan(0);
 
     await testImage2.scrollIntoViewIfNeeded();
     await expect(testImage2).toBeVisible();
     const bbox2 = await testImage2.boundingBox();
+    if (!bbox2) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox2.width).toBeGreaterThan(0);
     expect(bbox2.height).toBeGreaterThan(0);
 
     await testImage3.scrollIntoViewIfNeeded();
     await expect(testImage3).toBeVisible();
     const bbox3 = await testImage3.boundingBox();
+    if (!bbox3) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox3.width).toBeGreaterThan(0);
     expect(bbox3.height).toBeGreaterThan(0);
 
     await testImage4.scrollIntoViewIfNeeded();
     await expect(testImage4).toBeVisible();
     const bbox4 = await testImage4.boundingBox();
+    if (!bbox4) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox4.width).toBeGreaterThan(0);
     expect(bbox4.height).toBeGreaterThan(0);
 });
@@ -151,48 +186,72 @@ test('Project images load successfully', async ({ page }) => {
     await testImage.scrollIntoViewIfNeeded();
     await expect(testImage).toBeVisible();
     const bbox = await testImage.boundingBox();
+    if (!bbox) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox.width).toBeGreaterThan(0);
     expect(bbox.height).toBeGreaterThan(0);
 
     await testImage2.scrollIntoViewIfNeeded();
     await expect(testImage2).toBeVisible();
     const bbox2 = await testImage2.boundingBox();
+    if (!bbox2) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox2.width).toBeGreaterThan(0);
     expect(bbox2.height).toBeGreaterThan(0);
 
     await testImage3.scrollIntoViewIfNeeded();
     await expect(testImage3).toBeVisible();
     const bbox3 = await testImage3.boundingBox();
+    if (!bbox3) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox3.width).toBeGreaterThan(0);
     expect(bbox3.height).toBeGreaterThan(0);
 
     await testImage4.scrollIntoViewIfNeeded();
     await expect(testImage4).toBeVisible();
     const bbox4 = await testImage4.boundingBox();
+    if (!bbox4) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox4.width).toBeGreaterThan(0);
     expect(bbox4.height).toBeGreaterThan(0);
 
     await testImage5.scrollIntoViewIfNeeded();
     await expect(testImage5).toBeVisible();
     const bbox5 = await testImage5.boundingBox();
+    if (!bbox5) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox5.width).toBeGreaterThan(0);
     expect(bbox5.height).toBeGreaterThan(0);
 
     await testImage6.scrollIntoViewIfNeeded();
     await expect(testImage6).toBeVisible();
     const bbox6 = await testImage6.boundingBox();
+    if (!bbox6) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox6.width).toBeGreaterThan(0);
     expect(bbox6.height).toBeGreaterThan(0);
 
     await testImage7.scrollIntoViewIfNeeded();
     await expect(testImage7).toBeVisible();
     const bbox7 = await testImage7.boundingBox();
+    if (!bbox7) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox7.width).toBeGreaterThan(0);
     expect(bbox7.height).toBeGreaterThan(0);
 
     await testImage8.scrollIntoViewIfNeeded();
     await expect(testImage8).toBeVisible();
     const bbox8 = await testImage8.boundingBox();
+    if (!bbox8) {
+        throw new Error("Bounding box is null: image may not be loaded or visible");
+    }
     expect(bbox8.width).toBeGreaterThan(0);
     expect(bbox8.height).toBeGreaterThan(0);
 });
