@@ -32,8 +32,8 @@ export default function Home() {
             <Image
                 src={coverImg}
                 alt="Home Background Image"
-                layout="fill"
-                objectFit="cover"
+                fill={true}
+                style={{objectFit: "cover"}}
                 // Place the image behind other content and allow clicks to pass through.
                 className="absolute inset-0 pointer-events-none"
             />
@@ -134,8 +134,8 @@ export default function Home() {
             <Image
                 src={LAImg}
                 alt="LA Background Image"
-                layout="fill"
-                objectFit="cover"
+                fill={true}
+                style={{objectFit: "cover"}}
                 // Place the image behind other content and allow clicks to pass through.
                 className="absolute inset-0 pointer-events-none"
             />
