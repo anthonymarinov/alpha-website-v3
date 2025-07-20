@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.12.0",
-    "@playwright/test": "^1.53.2",
+    "@playwright/test": "^1.54.1",
     "@vercel/analytics": "^1.5.0",
     "next": "15.3.5",
     "playwright": "^1.54.1",
